@@ -48,13 +48,20 @@
 	}
 </style>
 
-<nav>
-	<ul>
-		<li><a class='{segment === undefined ? "selected" : ""}' href='.'>home</a></li>
-		<li><a class='{segment === "about" ? "selected" : ""}' href='about'>about</a></li>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+	<a class="navbar-brand" href="#">Stéphane Carion</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarNav">
+	<ul class="navbar-nav mr-auto">
+		<li class="nav-item"><a class='{segment === undefined ? "selected" : ""}' href='.'>home</a></li>
+		<li class="nav-item"><a class='nav-link {segment === "about" ? "selected" : ""}' href='about'>about</a></li>
 
 		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
-		     the blog data when we hover over the link or tap it on a touchscreen -->
-		<li><a rel=prefetch class='{segment === "blog" ? "selected" : ""}' href='blog'>blog</a></li>
+			the blog data when we hover over the link or tap it on a touchscreen -->
+		<li class="nav-item"><a rel=prefetch class='nav-link {segment === "blog" ? "selected" : ""}' href='blog'>blog</a></li>
+		<li class="nav-item"><a class='nav-link {segment === "contact" ? "selected" : ""}' href='contact'>contact</a></li>
 	</ul>
+	</div>
 </nav>

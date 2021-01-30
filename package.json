@@ -15,6 +15,11 @@
   },
   "devDependencies": {
     "@sanity/cli": "^2.0.0",
-    "lerna": "^3.14.0"
+    "lerna": "^3.22.1",
+    "purgecss": "^4.0.0",
+    "svelte-formly": "0.0.19"
+  },
+  "dependencies": {
+    "bootstrap": "^4.6.0"
   }
 }
